@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>newBuzo - Food Discovery & Social Sharing</title>
+    <meta name="description" content="Discover, capture, and share your favorite dining experiences with newBuzo" />
+    <meta name="author" content="newBuzo Team" />
+
+    <meta property="og:title" content="newBuzo - Food Discovery & Social Sharing" />
+    <meta property="og:description" content="Discover, capture, and share your favorite dining experiences with newBuzo" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/placeholder.svg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@newbuzo_app" />
+    <meta name="twitter:image" content="/placeholder.svg" />
+
+    <!-- PWA and mobile optimization -->
+    <meta name="theme-color" content="#ff2a68" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    
+    <!-- Google Maps JavaScript API callback -->
+    <script>
+      window.initGoogleMaps = function() {
+        window.googleMapsLoaded = true;
+        window.dispatchEvent(new Event('google-maps-loaded'));
+      };
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
